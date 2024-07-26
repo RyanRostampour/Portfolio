@@ -42,17 +42,20 @@ function Hero() {
         </h1>
         <h2>Backend Developer</h2>
         <span>
-          <a href="https://linkedin.com" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/ryan-rostampour-201a81201/"
+            target="_blank"
+          >
             <img src={linkedinIcon} alt="LinkedIn Icon" />
           </a>
-          <a href="https://github.com" target="_blank">
+          <a href="https://github.com/RyanRostampour" target="_blank">
             <img src={githubIcon} alt="GitHub Icon" />
           </a>
-          <a href="https://twitter.com" target="_blank">
+          <a href="https://x.com/Ryan66346884" target="_blank">
             <img src={twitterIcon} alt="Twitter Icon" />
           </a>
         </span>
-        <p className={styles.descroption}>
+        <p className={styles.description}>
           A software developer based in Canada with a love for coding whos
           always looking to learn and develop more.
         </p>
