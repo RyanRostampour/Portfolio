@@ -1,8 +1,8 @@
 import styles from "./ProjectsStyles.module.css";
-import viberr from "../../assets/viberr.png";
-import freshBurger from "../../assets/fresh-burger.png";
-import hipsster from "../../assets/hipsster.png";
-import fitLift from "../../assets/fitlift.png";
+import mastermind from "../../assets/mastermind.png";
+import flightsimulator from "../../assets/flightsimulator.png";
+import currencyConverter from "../../assets/currencyConverter.png";
+import portfolio from "../../assets/portfolio.png";
 import ProjectCard from "../../common/ProjectCard";
 
 function Projects() {
@@ -11,28 +11,28 @@ function Projects() {
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectsContainer}>
         <ProjectCard
-          src={viberr}
+          src={mastermind}
           link="https://github.com"
-          h3="Viberr"
-          p="Streaming App"
+          h3="Mastermind"
+          p="Numbe Guessing Game"
         />
         <ProjectCard
-          src={freshBurger}
+          src={flightsimulator}
           link="https://github.com"
-          h3="Fresh Burger"
-          p="Hamburger Restaurant"
+          h3="Flight Simulator"
+          p="3D Flight Simulator Game"
         />
         <ProjectCard
-          src={hipsster}
+          src={currencyConverter}
           link="https://github.com"
-          h3="Hipsster Glasses"
-          p="Glasses Shop"
+          h3="Currency Converter"
+          p="Live Currency Converter"
         />
         <ProjectCard
-          src={fitLift}
+          src={portfolio}
           link="https://github.com"
-          h3="FitLift"
-          p="Fitness App"
+          h3="Portfolio"
+          p="Current Portfolio"
         />
       </div>
     </section>
