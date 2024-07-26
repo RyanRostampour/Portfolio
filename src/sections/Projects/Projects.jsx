@@ -12,7 +12,7 @@ function Projects() {
       <div className={styles.projectsContainer}>
         <ProjectCard
           src={mastermind}
-          link="https://github.com/Dig1talSky/Mastermind"
+          link="https://github.com/RyanRostampour/Mastermind"
           h3="Mastermind"
           p="Numbe Guessing Game"
         />
@@ -24,13 +24,13 @@ function Projects() {
         />
         <ProjectCard
           src={currencyConverter}
-          link="https://github.com/Dig1talSky/CurrencyConverter"
+          link="https://github.com/RyanRostampour/CurrencyConverter"
           h3="Currency Converter"
           p="Live Currency Converter"
         />
         <ProjectCard
           src={portfolio}
-          link="https://github.com/Dig1talSky/Portfolio"
+          link="https://github.com/RyanRostampour/Portfolio"
           h3="Portfolio"
           p="Current Portfolio"
         />
