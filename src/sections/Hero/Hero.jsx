@@ -8,7 +8,7 @@ import githubLight from "../../assets/github-light.svg";
 import githubDark from "../../assets/github-dark.svg";
 import twitterLight from "../../assets/twitter-light.svg";
 import twitterDark from "../../assets/twitter-dark.svg";
-import CV from "../../assets/cv.pdf";
+import Resume from "../../assets/Resume.pdf";
 import { useTheme } from "../../common/ThemeContext";
 
 function Hero() {
@@ -55,7 +55,7 @@ function Hero() {
         <p className={styles.descroption}>
           An aspiring software developer based in Canada
         </p>
-        <a href={CV} download>
+        <a href={Resume} download>
           <button className="hover">Resume</button>
         </a>
       </div>
