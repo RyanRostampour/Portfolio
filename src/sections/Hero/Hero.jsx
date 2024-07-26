@@ -53,7 +53,8 @@ function Hero() {
           </a>
         </span>
         <p className={styles.descroption}>
-          An aspiring software developer based in Canada
+          A software developer based in Canada with a love for coding whos
+          always looking to learn and develop more.
         </p>
         <a href={Resume} download>
           <button className="hover">Resume</button>
