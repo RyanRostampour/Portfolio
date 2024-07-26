@@ -14,7 +14,7 @@ function Projects() {
           src={mastermind}
           link="https://github.com/RyanRostampour/Mastermind"
           h3="Mastermind"
-          p="Numbe Guessing Game"
+          p="Number Guessing Game"
         />
         <ProjectCard
           src={flightsimulator}
