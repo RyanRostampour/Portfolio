@@ -18,7 +18,7 @@ function Projects() {
         />
         <ProjectCard
           src={flightsimulator}
-          link="https://github.com/comp2800/project"
+          link="https://github.com/comp2800/project/tree/FlightSimulator"
           h3="Flight Simulator"
           p="3D Flight Simulator Game"
         />
