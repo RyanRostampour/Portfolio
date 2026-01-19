@@ -14,13 +14,15 @@ function Projects() {
           src={flightsimulator}
           link="https://github.com/RyanRostampour/Detecting-Sleeper-Agents-in-LLMs-via-Semantic-Drift-Analysis"
           h3="Sleeper Agents"
-          p="LLM Sleeper Agents via Semantic Drift Analysis"
+          p="LLM Sleeper Agents via 
+          Semantic Drift Analysis"
         />
         <ProjectCard
           src={currencyConverter}
           link="https://github.com/RyanRostampour/Binary-Decision-Diagrams-for-Prime-Number-Detection"
           h3="Prime Number Binary Decision Diagrams"
-          p="Binary Decision Diagrams for Prime Number Detection"
+          p="Binary Decision Diagrams for 
+          Prime Number Detection"
         />
         <ProjectCard
           src={mastermind}
