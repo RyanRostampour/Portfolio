@@ -11,7 +11,7 @@ function Projects() {
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectsContainer}>
         <ProjectCard
-          src={mastermind}
+          src={flightsimulator}
           link="https://github.com/RyanRostampour/Detecting-Sleeper-Agents-in-LLMs-via-Semantic-Drift-Analysis"
           h3="Sleeper Agents"
           p="LLM Sleeper Agents via Semantic Drift Analysis"
@@ -23,7 +23,7 @@ function Projects() {
           p="Binary Decision Diagrams for Prime Number Detection"
         />
         <ProjectCard
-          src={flightsimulator}
+          src={mastermind}
           link="https://github.com/comp2800/project/tree/FlightSimulator"
           h3="Flight Simulator"
           p="3D Flight Simulator Game"
