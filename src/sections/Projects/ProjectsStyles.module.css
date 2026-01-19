@@ -11,8 +11,9 @@
   }
 
   a {
-    width: fit-content;
+    width: 100%;
     text-decoration: none;
+    word-wrap: break-word;
     color: #222;
     transition: transform 200ms ease-in-out;
   }
@@ -27,7 +28,6 @@
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  word-wrap: break-word;
 }
 
 @media (width >= 800px) {
