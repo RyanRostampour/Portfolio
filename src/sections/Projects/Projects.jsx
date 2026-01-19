@@ -20,7 +20,7 @@ function Projects() {
           src={currencyConverter}
           link="https://github.com/RyanRostampour/Binary-Decision-Diagrams-for-Prime-Number-Detection"
           h3="Prime Number Detection"
-          p="Binary Decision Diagrams for Prime Number Detection"
+          p="Prime Number Classification using BDD"
         />
         <ProjectCard
           src={mastermind}
