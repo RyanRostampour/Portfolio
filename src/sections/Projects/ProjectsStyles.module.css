@@ -10,8 +10,6 @@
     align-self: center;
     background-color: var(--project-card-bg);
     border-radius: 20px;
-    width: 100%;
-    height: auto;
   }
 
   a {
@@ -19,8 +17,6 @@
     text-decoration: none;
     color: #222;
     transition: transform 200ms ease-in-out;
-    padding: 0 10px;
-    box-sizing: border-box;
   }
 
   a:hover {
