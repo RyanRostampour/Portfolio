@@ -12,21 +12,21 @@ function Projects() {
       <div className={styles.projectsContainer}>
         <ProjectCard
           src={mastermind}
-          link="https://github.com/RyanRostampour/Mastermind"
-          h3="Mastermind"
-          p="Number Guessing Game"
+          link="https://github.com/RyanRostampour/Detecting-Sleeper-Agents-in-LLMs-via-Semantic-Drift-Analysis"
+          h3="Sleeper Agents"
+          p="LLM Sleeper Agents via Semantic Drift Analysis"
+        />
+        <ProjectCard
+          src={currencyConverter}
+          link="https://github.com/RyanRostampour/Binary-Decision-Diagrams-for-Prime-Number-Detection"
+          h3="Prime Number Binary Decision Diagrams"
+          p="Binary Decision Diagrams for Prime Number Detection"
         />
         <ProjectCard
           src={flightsimulator}
           link="https://github.com/comp2800/project/tree/FlightSimulator"
           h3="Flight Simulator"
           p="3D Flight Simulator Game"
-        />
-        <ProjectCard
-          src={currencyConverter}
-          link="https://github.com/RyanRostampour/CurrencyConverter"
-          h3="Currency Converter"
-          p="Live Currency Converter"
         />
         <ProjectCard
           src={portfolio}
