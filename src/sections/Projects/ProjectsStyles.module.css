@@ -2,28 +2,22 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 250px;
-  margin: 0 auto;
 
-  .container img {
-    width: 100%;
+  img {
     max-width: 250px;
-    height: auto;
     align-self: center;
     background-color: var(--project-card-bg);
     border-radius: 20px;
   }
 
-  .container a {
-    width: 100%;
+  a {
+    width: fit-content;
     text-decoration: none;
     color: #222;
     transition: transform 200ms ease-in-out;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
   }
 
-  .container a:hover {
+  a:hover {
     transform: scale(1.05);
   }
 }
@@ -35,12 +29,11 @@
   gap: 30px;
 }
 
-@media (min-width: 800px) {
+@media (width >= 800px) {
   .projectsContainer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 0 30px;
-    align-items: flex-start;
   }
 }
