@@ -8,8 +8,6 @@
   align-items: center;
   justify-content: space-between;
   padding: 18px 40px;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
   background: transparent;
   border-bottom: 1px solid transparent;
   transition: background 500ms ease, border-color 500ms ease;
@@ -18,6 +16,8 @@
 .nav.scrolled {
   background: var(--nav-bg);
   border-bottom: 1px solid var(--nav-border);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 .logo {
