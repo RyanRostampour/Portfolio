@@ -6,8 +6,6 @@
   overflow: hidden;
   border: 1px solid var(--card-glass-border);
   background-color: var(--card-glass-bg);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
   background-size: 100% 8px;
   background-repeat: no-repeat;
   background-position: top;
