@@ -1,17 +1,19 @@
 import styles from "./SkillsStyles.module.css";
-import htmlIcon from "../../assets/html.png";
-import cssIcon from "../../assets/css.png";
+import htmlIcon from "../../assets/html.svg";
+import cssIcon from "../../assets/css.svg";
 import javascriptIcon from "../../assets/javascript.svg";
-import typescriptIcon from "../../assets/typescript.svg";
+import pythonIcon from "../../assets/python.svg";
+import javaIcon from "../../assets/java.svg";
+import cIcon from "../../assets/c.svg";
+import mysqlIcon from "../../assets/mysql.svg";
 import reactIcon from "../../assets/react.svg";
-import nodejsIcon from "../../assets/node.svg";
 import vueIcon from "../../assets/vue.svg";
-import tailwindIcon from "../../assets/tailwind.svg";
-import reduxIcon from "../../assets/redux.svg";
-import webpackIcon from "../../assets/webpack.svg";
-import gitIcon from "../../assets/git.svg";
-import jestIcon from "../../assets/jest.png";
 import bootstrapIcon from "../../assets/bootstrap.svg";
+import scikitlearnIcon from "../../assets/scikitlearn.svg";
+import gitIcon from "../../assets/git.svg";
+import linuxIcon from "../../assets/linux.svg";
+import androidIcon from "../../assets/android.svg";
+import pytorchIcon from "../../assets/pytorch.svg";
 import SkillList from "../../common/SkillList";
 
 function Skills() {
@@ -19,25 +21,27 @@ function Skills() {
     <section id="skills" className={styles.container}>
       <h1 className="sectionTitle">Skills</h1>
       <div className={styles.skillList}>
+        <SkillList src={pythonIcon} skill="Python" />
+        <SkillList src={javaIcon} skill="Java" />
+        <SkillList src={cIcon} skill="C" />
+        <SkillList src={javascriptIcon} skill="JavaScript" />
         <SkillList src={htmlIcon} skill="HTML" />
         <SkillList src={cssIcon} skill="CSS" />
-        <SkillList src={javascriptIcon} skill="JavaScript" />
-        <SkillList src={typescriptIcon} skill="TypeScript" />
-        <SkillList src={nodejsIcon} skill="Node" />
+        <SkillList src={mysqlIcon} skill="SQL" />
       </div>
       <hr />
       <div className={styles.skillList}>
         <SkillList src={reactIcon} skill="React" />
-        <SkillList src={vueIcon} skill="Vue" />
-        <SkillList src={tailwindIcon} skill="Tailwind CSS" />
+        <SkillList src={vueIcon} skill="Vue.js" />
+        <SkillList src={bootstrapIcon} skill="Bootstrap" />
+        <SkillList src={scikitlearnIcon} skill="scikit-learn" />
+        <SkillList src={androidIcon} skill="Android SDK" />
       </div>
       <hr />
       <div className={styles.skillList}>
-        <SkillList src={reduxIcon} skill="Redux" />
-        <SkillList src={webpackIcon} skill="Webpack" />
+        <SkillList src={pytorchIcon} skill="PyTorch" />
         <SkillList src={gitIcon} skill="Git" />
-        <SkillList src={jestIcon} skill="Jest" />
-        <SkillList src={bootstrapIcon} skill="Bootstrap" />
+        <SkillList src={linuxIcon} skill="Linux" />
       </div>
     </section>
   );

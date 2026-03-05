@@ -1,12 +1,27 @@
-import React from "react";
+import styles from "./ProjectCard.module.css";
 
-function ProjectCard({ src, link, h3, p }) {
+function ProjectCard({ link, h3, p, tags, accent }) {
   return (
-    <a href={link} target="_blank_">
-      <img className="hover" src={src} alt={`${h3} logo`} />
-      <h3>{h3}</h3>
-      <p>{p}</p>
-    </a>
+    <div className={styles.card}>
+      <div
+        className={styles.accent}
+        style={{ background: accent || "linear-gradient(135deg, #0987f2, #6dd5fa)" }}
+      />
+      <div className={styles.body}>
+        <h3 className={styles.title}>{h3}</h3>
+        <p className={styles.description}>{p}</p>
+        {tags && (
+          <div className={styles.tags}>
+            {tags.map((tag) => (
+              <span key={tag} className={styles.tag}>{tag}</span>
+            ))}
+          </div>
+        )}
+        <a href={link} target="_blank" rel="noreferrer" className={styles.link}>
+          View on GitHub →
+        </a>
+      </div>
+    </div>
   );
 }
 

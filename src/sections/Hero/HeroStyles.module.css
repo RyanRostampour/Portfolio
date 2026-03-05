@@ -68,7 +68,7 @@
 }
 
 .description {
-  max-width: 24ch;
+  max-width: 52ch;
   align-self: center;
 }
 
@@ -83,11 +83,24 @@
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-evenly;
+    text-align: left;
 
     .hero {
       max-width: 350px;
       width: 350px;
     }
+
+    span {
+      justify-content: flex-start;
+    }
+
+    a {
+      align-self: flex-start;
+    }
+  }
+
+  .description {
+    align-self: flex-start;
   }
 }
 

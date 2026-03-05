@@ -1,0 +1,85 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  background-color: var(--project-card-bg);
+  width: 320px;
+  height: 100%;
+  transition: transform 200ms ease-in-out, box-shadow 200ms ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+.accent {
+  height: 8px;
+  width: 100%;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px;
+  flex: 1;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--form-text-color);
+  font-weight: 300;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.tag {
+  font-family: "Roboto Mono", monospace;
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background-color: rgba(9, 135, 242, 0.15);
+  color: var(--tag-color);
+  font-weight: 500;
+}
+
+.link {
+  font-family: "Roboto Mono", monospace;
+  font-size: 13px;
+  font-weight: 500;
+  color: #0987f2;
+  text-decoration: none;
+  padding-top: 8px;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+@media (width >= 800px) {
+  .card {
+    width: 340px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+}

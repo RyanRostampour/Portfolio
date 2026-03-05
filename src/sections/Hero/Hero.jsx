@@ -6,8 +6,6 @@ import linkedinLight from "../../assets/linkedin-light.svg";
 import linkedinDark from "../../assets/linkedin-dark.svg";
 import githubLight from "../../assets/github-light.svg";
 import githubDark from "../../assets/github-dark.svg";
-import twitterLight from "../../assets/twitter-light.svg";
-import twitterDark from "../../assets/twitter-dark.svg";
 import Resume from "../../assets/Resume.pdf";
 import { useTheme } from "../../common/ThemeContext";
 
@@ -15,7 +13,6 @@ function Hero() {
   const { theme, toggleTheme } = useTheme();
 
   const themeIcon = theme === "light" ? sun : moon;
-  const twitterIcon = theme === "light" ? twitterLight : twitterDark;
   const githubIcon = theme === "light" ? githubLight : githubDark;
   const linkedinIcon = theme === "light" ? linkedinLight : linkedinDark;
 
@@ -40,7 +37,7 @@ function Hero() {
           <br />
           Rostampour
         </h1>
-        <h2>Backend Developer</h2>
+        <h2>Software Developer & M.Sc. CS Student</h2>
         <span>
           <a
             href="https://www.linkedin.com/in/ryan-rostampour-201a81201/"
@@ -51,13 +48,12 @@ function Hero() {
           <a href="https://github.com/RyanRostampour" target="_blank">
             <img src={githubIcon} alt="GitHub Icon" />
           </a>
-          <a href="https://x.com/Ryan66346884" target="_blank">
-            <img src={twitterIcon} alt="Twitter Icon" />
-          </a>
         </span>
         <p className={styles.description}>
-          A software developer based in Canada with a love for coding whos
-          always looking to learn and develop more.
+          M.Sc. Computer Science student and Graduate Assistant at the
+          University of Windsor. Specializing in machine learning and software
+          development, with research focused on AI security and backdoor
+          detection in large language models.
         </p>
         <a href={Resume} download>
           <button className="hover">Resume</button>
