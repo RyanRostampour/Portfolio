@@ -62,7 +62,7 @@ html {
 /* Theme transition — View Transitions API crossfade */
 ::view-transition-old(root),
 ::view-transition-new(root) {
-  animation-duration: 400ms;
+  animation-duration: 600ms;
   animation-timing-function: ease;
 }
 
