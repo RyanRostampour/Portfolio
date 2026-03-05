@@ -43,21 +43,6 @@ html {
   scroll-padding-top: 70px;
 }
 
-.grain-overlay {
-  position: fixed;
-  inset: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 2;
-  pointer-events: none;
-  opacity: 0.09;
-  mix-blend-mode: soft-light;
-}
-
-[data-theme="light"] .grain-overlay {
-  opacity: 0.05;
-  mix-blend-mode: multiply;
-}
 
 /* Theme transition — View Transitions API crossfade */
 ::view-transition-old(root),
@@ -173,10 +158,6 @@ p {
 
 
 @media (width < 800px) {
-  .grain-overlay {
-    display: none;
-  }
-
   .orb-1 {
     filter: blur(60px);
   }
