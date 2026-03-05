@@ -6,7 +6,6 @@ import linkedinLight from "../../assets/linkedin-light.svg";
 import linkedinDark from "../../assets/linkedin-dark.svg";
 import githubLight from "../../assets/github-light.svg";
 import githubDark from "../../assets/github-dark.svg";
-import Resume from "../../assets/Resume.pdf";
 import { useTheme } from "../../common/ThemeContext";
 
 function Hero() {
@@ -55,7 +54,7 @@ function Hero() {
           development, with research focused on AI security and backdoor
           detection in large language models.
         </p>
-        <a href={Resume} download>
+        <a href="/Ryan_Rostampour_Resume.pdf" download="Ryan_Rostampour_Resume.pdf">
           <button className="hover">Resume</button>
         </a>
       </div>
