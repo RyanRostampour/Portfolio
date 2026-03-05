@@ -107,6 +107,12 @@
   gap: 20px;
 }
 
+@media (width < 800px) {
+  .container {
+    padding-top: 70px;
+  }
+}
+
 @media (width >= 800px) {
   .container {
     flex-direction: row-reverse;

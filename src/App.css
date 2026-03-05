@@ -171,6 +171,25 @@ p {
   cursor: pointer;
 }
 
+
+@media (width < 800px) {
+  .grain-overlay {
+    display: none;
+  }
+
+  .orb-1 {
+    filter: blur(60px);
+  }
+
+  .orb-2 {
+    filter: blur(50px);
+  }
+
+  .orb-3 {
+    filter: blur(40px);
+  }
+}
+
 @media (width >= 800px) {
   #root {
     gap: 100px;

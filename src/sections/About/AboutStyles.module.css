@@ -3,6 +3,7 @@
   flex-direction: column;
   text-align: center;
   align-items: center;
+  padding: 0 20px;
 }
 
 .content {
@@ -12,7 +13,6 @@
   max-width: 720px;
   width: 100%;
   text-align: left;
-  padding: 0 20px;
 }
 
 .lead {
@@ -23,11 +23,11 @@
 }
 
 @media (width >= 800px) {
-  .lead {
-    font-size: 20px;
+  .container {
+    padding: 0;
   }
 
-  .content {
-    padding: 0;
+  .lead {
+    font-size: 20px;
   }
 }
