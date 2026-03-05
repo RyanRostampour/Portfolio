@@ -3,12 +3,6 @@
   flex-direction: column;
   text-align: center;
 
-  span {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
-
   img {
     width: 20px;
   }

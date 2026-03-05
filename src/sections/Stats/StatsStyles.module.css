@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px 60px;
+  padding: 0 20px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  min-width: 130px;
+}
+
+.number {
+  font-family: "Rubik", sans-serif;
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 1;
+  background: linear-gradient(135deg, #0987f2, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.label {
+  font-family: "Roboto Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  opacity: 0.6;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.sublabel {
+  font-family: "Roboto Mono", monospace;
+  font-size: 11px;
+  opacity: 0.35;
+  color: var(--text-color);
+  text-align: center;
+}
+
+@media (width >= 800px) {
+  .number {
+    font-size: 64px;
+  }
+
+  .container {
+    gap: 40px 80px;
+  }
+}

@@ -1,7 +1,9 @@
+import styles from "./SkillList.module.css";
+
 function SkillList({ src, skill }) {
   return (
-    <span>
-      <img src={src} alt="Checkmark Icon" />
+    <span className={styles.item}>
+      <img src={src} alt={skill} />
       <p>{skill}</p>
     </span>
   );

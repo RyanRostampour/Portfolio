@@ -1,23 +1,78 @@
 :root {
-  --background-color: #fff;
+  --background-color: #f5f5f7;
   --btn-color: #0987f2;
   --btn-text-color: #fff;
-  --project-card-bg: #f8f9fa;
-  --text-color: #222;
+  --text-color: #1d1d1f;
   --form-text-color: #555;
   --footer-text-color: #888;
   --tag-color: #0987f2;
+  --orb-1: rgba(9, 135, 242, 0.22);
+  --orb-2: rgba(139, 92, 246, 0.16);
+  --orb-3: rgba(20, 184, 166, 0.12);
+  --nav-bg: rgba(245, 245, 247, 0.85);
+  --nav-border: rgba(0, 0, 0, 0.1);
+  --card-glass-bg: rgba(255, 255, 255, 0.92);
+  --card-glass-border: rgba(0, 0, 0, 0.1);
+  --card-spotlight: rgba(0, 0, 0, 0.04);
+  --card-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  --divider-color: rgba(0, 0, 0, 0.18);
 }
 
 [data-theme="dark"] {
-  --background-color: #222;
+  --background-color: #000;
   --btn-color: #fff;
-  --btn-text-color: #222;
-  --project-card-bg: #2a2a2a;
-  --text-color: #fff;
+  --btn-text-color: #000;
+  --text-color: #f5f5f7;
   --form-text-color: #bbb;
-  --footer-text-color: #bbb;
+  --footer-text-color: #888;
   --tag-color: #6ab4ff;
+  --orb-1: rgba(9, 135, 242, 0.28);
+  --orb-2: rgba(139, 92, 246, 0.18);
+  --orb-3: rgba(20, 184, 166, 0.1);
+  --nav-bg: rgba(0, 0, 0, 0.75);
+  --nav-border: rgba(255, 255, 255, 0.08);
+  --card-glass-bg: rgba(255, 255, 255, 0.04);
+  --card-glass-border: rgba(255, 255, 255, 0.08);
+  --card-spotlight: rgba(255, 255, 255, 0.1);
+  --card-shadow: none;
+  --divider-color: rgba(255, 255, 255, 0.13);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
+.grain-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.09;
+  mix-blend-mode: soft-light;
+}
+
+[data-theme="light"] .grain-overlay {
+  opacity: 0.05;
+  mix-blend-mode: multiply;
+}
+
+/* Theme transition — View Transitions API crossfade */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 400ms;
+  animation-timing-function: ease;
+}
+
+/* Section dividers */
+.section-divider {
+  width: 100%;
+  max-width: 600px;
+  height: 1px;
+  margin: 0 auto;
+  background: linear-gradient(90deg, transparent, var(--divider-color), transparent);
 }
 
 body {
@@ -25,6 +80,46 @@ body {
   display: flex;
   justify-content: center;
   margin: 0 auto 60px;
+}
+
+.background-orbs {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.orb {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.orb-1 {
+  width: 700px;
+  height: 700px;
+  top: -200px;
+  left: -200px;
+  background: var(--orb-1);
+  filter: blur(100px);
+}
+
+.orb-2 {
+  width: 600px;
+  height: 600px;
+  bottom: -150px;
+  right: -150px;
+  background: var(--orb-2);
+  filter: blur(90px);
+}
+
+.orb-3 {
+  width: 450px;
+  height: 450px;
+  top: 40%;
+  right: 5%;
+  background: var(--orb-3);
+  filter: blur(80px);
 }
 
 #root {

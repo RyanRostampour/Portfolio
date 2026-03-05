@@ -1,21 +1,39 @@
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   border-radius: 16px;
   overflow: hidden;
-  border: 1px solid rgba(128, 128, 128, 0.2);
-  background-color: var(--project-card-bg);
+  border: 1px solid var(--card-glass-border);
+  background-color: var(--card-glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   background-size: 100% 8px;
   background-repeat: no-repeat;
   background-position: top;
   width: 320px;
   height: 100%;
+  box-shadow: var(--card-shadow, none);
   transition: transform 200ms ease-in-out, box-shadow 200ms ease-in-out;
 }
 
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at var(--mx) var(--my), var(--card-spotlight), transparent 60%);
+  opacity: 0;
+  transition: opacity 300ms ease;
+  pointer-events: none;
+}
+
 .card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  transform: translateY(-5px);
+  box-shadow: 0 16px 40px var(--glow, rgba(0, 0, 0, 0.15));
+}
+
+.card:hover::after {
+  opacity: 1;
 }
 
 .body {

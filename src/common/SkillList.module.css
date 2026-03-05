@@ -1,0 +1,12 @@
+.item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: default;
+  transition: transform 200ms ease, filter 200ms ease;
+}
+
+.item:hover {
+  transform: scale(1.1);
+  filter: brightness(1.25);
+}

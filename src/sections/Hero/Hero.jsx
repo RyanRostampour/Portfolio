@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styles from "./HeroStyles.module.css";
 import heroImg from "../../assets/heroImg.png";
 import sun from "../../assets/sun.svg";
@@ -8,6 +9,8 @@ import githubLight from "../../assets/github-light.svg";
 import githubDark from "../../assets/github-dark.svg";
 import { useTheme } from "../../common/ThemeContext";
 
+const ease = [0.25, 0.46, 0.45, 0.94];
+
 function Hero() {
   const { theme, toggleTheme } = useTheme();
 
@@ -17,7 +20,12 @@ function Hero() {
 
   return (
     <section id="hero" className={styles.container}>
-      <div className={styles.colorModeContainer}>
+      <motion.div
+        className={styles.colorModeContainer}
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8, ease }}
+      >
         <img
           className={styles.hero}
           src={heroImg}
@@ -29,9 +37,14 @@ function Hero() {
           alt="Color mode icon"
           onClick={toggleTheme}
         />
-      </div>
-      <div className={styles.info}>
-        <h1>
+      </motion.div>
+      <motion.div
+        className={styles.info}
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8, ease, delay: 0.15 }}
+      >
+        <h1 className={styles.gradientName}>
           Ryan
           <br />
           Rostampour
@@ -57,7 +70,12 @@ function Hero() {
         <a href="/Ryan_Rostampour_Resume.pdf" download="Ryan_Rostampour_Resume.pdf">
           <button className="hover">Resume</button>
         </a>
-      </div>
+      </motion.div>
+      <a href="#projects" className={styles.scrollIndicator} aria-label="Scroll to projects">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <polyline points="6 9 12 15 18 9" />
+        </svg>
+      </a>
     </section>
   );
 }
