@@ -56,6 +56,7 @@
 
 .colorModeContainer {
   position: relative;
+  align-self: center;
 }
 
 .colorMode {
@@ -109,7 +110,7 @@
 
 @media (width < 800px) {
   .container {
-    padding-top: 70px;
+    padding-top: 40px;
   }
 }
 
