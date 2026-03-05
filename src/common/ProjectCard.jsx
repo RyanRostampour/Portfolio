@@ -2,11 +2,10 @@ import styles from "./ProjectCard.module.css";
 
 function ProjectCard({ link, h3, p, tags, accent }) {
   return (
-    <div className={styles.card}>
-      <div
-        className={styles.accent}
-        style={{ background: accent || "linear-gradient(135deg, #0987f2, #6dd5fa)" }}
-      />
+    <div
+      className={styles.card}
+      style={{ backgroundImage: accent || "linear-gradient(135deg, #0987f2, #6dd5fa)" }}
+    >
       <div className={styles.body}>
         <h3 className={styles.title}>{h3}</h3>
         <p className={styles.description}>{p}</p>
