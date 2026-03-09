@@ -51,6 +51,15 @@ function Projects() {
         />
         <ProjectCard
           variants={itemVariants}
+          link="https://github.com/RyanRostampour/Bank-Management-Application"
+          h3="Bank Management Application"
+          p="A full-stack personal finance management application giving you a complete picture of your finances in one place. Log expenses, track debt, manage payment plans, set budgets, and get personalized advice from an AI financial advisor."
+          tags={["Next.js", "PostgreSQL", "shadcn/ui"]}
+          accent="linear-gradient(135deg, #cb2d3e, #ef473a)"
+          glowColor="rgba(239, 71, 58, 0.35)"
+        />
+        <ProjectCard
+          variants={itemVariants}
           link="https://github.com/RyanRostampour/Portfolio"
           h3="Portfolio"
           p="Personal portfolio built with React and Vue.js featuring dark/light mode, responsive design, and a functional contact form."
