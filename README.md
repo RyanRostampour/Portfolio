@@ -101,4 +101,6 @@ To deploy your own fork:
 
 ## License
 
-MIT
+© 2025 Ryan Rostampour. All rights reserved.
+
+The source code is available for reference only. The design, content, and assets may not be copied, reused, or redistributed without permission.
