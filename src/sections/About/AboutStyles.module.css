@@ -22,9 +22,25 @@
   opacity: 0.95;
 }
 
+.highlight {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(17px, 2vw, 21px);
+  font-weight: 500;
+  line-height: 1.55;
+  color: var(--text-color);
+  border-left: 2px solid #1D8EF0;
+  padding: 6px 0 6px 20px;
+  margin: 4px 0;
+  opacity: 0.88;
+}
+
 @media (width >= 800px) {
   .container {
     padding: 0;
+  }
+
+  .content {
+    max-width: 800px;
   }
 
   .lead {

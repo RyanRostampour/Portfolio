@@ -1,6 +1,7 @@
 import "./App.css";
 import Nav from "./sections/Nav/Nav";
 import ScrollProgress from "./common/ScrollProgress";
+import NeuralBackground from "./common/NeuralBackground";
 import Hero from "./sections/Hero/Hero";
 import About from "./sections/About/About";
 import Projects from "./sections/Projects/Projects";
@@ -15,11 +16,7 @@ function App() {
     <>
       <Nav />
       <ScrollProgress />
-      <div className="background-orbs" aria-hidden="true">
-        <div className="orb orb-1" />
-        <div className="orb orb-2" />
-        <div className="orb orb-3" />
-      </div>
+      <NeuralBackground />
       <Hero />
       <About />
       <Projects />

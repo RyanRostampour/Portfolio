@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import SectionTitle from "../../common/SectionTitle";
 import styles from "./ContactStyles.module.css";
 
 const ease = [0.25, 0.46, 0.45, 0.94];
@@ -25,15 +26,7 @@ function Contact() {
 
   return (
     <section id="contact" className={styles.container}>
-      <motion.h1
-        className="sectionTitle"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-80px" }}
-        transition={{ duration: 0.7, ease }}
-      >
-        Contact
-      </motion.h1>
+      <SectionTitle>Contact</SectionTitle>
 
       {status === "success" ? (
         <motion.div

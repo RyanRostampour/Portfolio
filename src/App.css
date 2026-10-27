@@ -1,47 +1,48 @@
 :root {
-  --background-color: #f5f5f7;
-  --btn-color: #0987f2;
+  --background-color: #f6f6f6;
+  --btn-color: #1460C8;
   --btn-text-color: #fff;
-  --text-color: #1d1d1f;
-  --form-text-color: #555;
-  --footer-text-color: #888;
-  --tag-color: #0987f2;
-  --orb-1: rgba(9, 135, 242, 0.22);
-  --orb-2: rgba(139, 92, 246, 0.16);
-  --orb-3: rgba(20, 184, 166, 0.12);
-  --nav-bg: rgba(245, 245, 247, 0.85);
-  --nav-border: rgba(0, 0, 0, 0.1);
-  --card-glass-bg: rgba(255, 255, 255, 0.92);
-  --card-glass-border: rgba(0, 0, 0, 0.1);
+  --text-color: #0c1829;
+  --text-muted: #4a6080;
+  --form-text-color: #556070;
+  --footer-text-color: #8090a8;
+  --tag-color: #1460C8;
+  --nav-bg: rgba(243, 247, 254, 0.88);
+  --nav-border: rgba(0, 0, 0, 0.08);
+  --card-glass-bg: rgba(255, 255, 255, 0.95);
+  --card-glass-border: rgba(0, 0, 0, 0.08);
   --card-spotlight: rgba(0, 0, 0, 0.04);
-  --card-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
-  --divider-color: rgba(0, 0, 0, 0.18);
+  --card-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+  --divider-color: rgba(0, 0, 0, 0.12);
+  --accent-blue: #1D8EF0;
+  --accent-purple: #8B5CF6;
 }
 
 [data-theme="dark"] {
-  --background-color: #000;
-  --btn-color: #fff;
-  --btn-text-color: #000;
-  --text-color: #f5f5f7;
-  --form-text-color: #bbb;
-  --footer-text-color: #888;
-  --tag-color: #6ab4ff;
-  --orb-1: rgba(9, 135, 242, 0.28);
-  --orb-2: rgba(139, 92, 246, 0.18);
-  --orb-3: rgba(20, 184, 166, 0.1);
-  --nav-bg: rgba(0, 0, 0, 0.75);
-  --nav-border: rgba(255, 255, 255, 0.08);
-  --card-glass-bg: rgba(255, 255, 255, 0.04);
-  --card-glass-border: rgba(255, 255, 255, 0.08);
-  --card-spotlight: rgba(255, 255, 255, 0.1);
+  --background-color: #060606;
+  --btn-color: #1D8EF0;
+  --btn-text-color: #fff;
+  --text-color: #eef4ff;
+  --text-muted: #7ba8cc;
+  --form-text-color: #7ba8cc;
+  --footer-text-color: #4a6a90;
+  --tag-color: #60a5fa;
+  --nav-bg: rgba(6, 13, 28, 0.88);
+  --nav-border: rgba(255, 255, 255, 0.07);
+  --card-glass-bg: rgba(255, 255, 255, 0.035);
+  --card-glass-border: rgba(255, 255, 255, 0.1);
+  --card-spotlight: rgba(255, 255, 255, 0.08);
   --card-shadow: none;
-  --divider-color: rgba(255, 255, 255, 0.13);
+  --divider-color: rgba(255, 255, 255, 0.1);
+  --accent-blue: #3B82F6;
+  --accent-purple: #A855F7;
 }
 
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 70px;
 }
+
 
 
 /* Theme transition — View Transitions API crossfade */
@@ -67,45 +68,6 @@ body {
   margin: 0 auto 60px;
 }
 
-.background-orbs {
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-  overflow: hidden;
-}
-
-.orb {
-  position: absolute;
-  border-radius: 50%;
-}
-
-.orb-1 {
-  width: 700px;
-  height: 700px;
-  top: -200px;
-  left: -200px;
-  background: var(--orb-1);
-  filter: blur(100px);
-}
-
-.orb-2 {
-  width: 600px;
-  height: 600px;
-  bottom: -150px;
-  right: -150px;
-  background: var(--orb-2);
-  filter: blur(90px);
-}
-
-.orb-3 {
-  width: 450px;
-  height: 450px;
-  top: 40%;
-  right: 5%;
-  background: var(--orb-3);
-  filter: blur(80px);
-}
 
 #root {
   display: flex;
@@ -123,14 +85,13 @@ p {
 }
 
 h2,
-h3,
-p {
-  font-family: "Roboto Mono", monospace;
+h3 {
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: -0.025em;
 }
 
-h1,
-h2 {
-  text-transform: uppercase;
+p {
+  font-family: "JetBrains Mono", monospace;
 }
 
 h2,
@@ -139,8 +100,10 @@ h3 {
 }
 
 h1 {
-  font-family: "Rubik", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 32px;
+  letter-spacing: -0.05em;
+  line-height: 1.05;
 }
 
 p {
@@ -157,33 +120,20 @@ p {
 }
 
 
-@media (width < 800px) {
-  .orb-1 {
-    filter: blur(60px);
-  }
-
-  .orb-2 {
-    filter: blur(50px);
-  }
-
-  .orb-3 {
-    filter: blur(40px);
-  }
-}
 
 @media (width >= 800px) {
   #root {
-    gap: 100px;
+    gap: 120px;
   }
   h1 {
-    font-size: 40px;
+    font-size: 44px;
   }
   h2,
   h3 {
-    font-size: 24px;
+    font-size: 26px;
   }
   p {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .sectionTitle {
@@ -196,7 +146,7 @@ p {
     gap: 200px;
   }
   h1 {
-    font-size: 48px;
+    font-size: 52px;
   }
 
   .sectionTitle {

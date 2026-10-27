@@ -2,32 +2,32 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  border-radius: 16px;
+  border-radius: 14px;
   overflow: hidden;
   border: 1px solid var(--card-glass-border);
   background-color: var(--card-glass-bg);
-  background-size: 100% 8px;
+  background-size: 100% 3px;
   background-repeat: no-repeat;
   background-position: top;
   width: 320px;
   height: 100%;
   box-shadow: var(--card-shadow, none);
-  transition: transform 200ms ease-in-out, box-shadow 200ms ease-in-out;
+  transition: transform 300ms cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 300ms ease;
 }
 
 .card::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at var(--mx) var(--my), var(--card-spotlight), transparent 60%);
+  background: radial-gradient(circle at var(--mx) var(--my), var(--card-spotlight), transparent 55%);
   opacity: 0;
-  transition: opacity 300ms ease;
+  transition: opacity 350ms ease;
   pointer-events: none;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 16px 40px var(--glow, rgba(0, 0, 0, 0.15));
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 24px 60px var(--glow, rgba(29, 142, 240, 0.18));
 }
 
 .card:hover::after {
@@ -44,7 +44,8 @@
 
 .title {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 .description {
@@ -62,22 +63,24 @@
 }
 
 .tag {
-  font-family: "Roboto Mono", monospace;
+  font-family: "JetBrains Mono", monospace;
   font-size: 11px;
   padding: 4px 10px;
-  border-radius: 20px;
-  background-color: rgba(9, 135, 242, 0.15);
+  border-radius: 6px;
+  background-color: rgba(29, 142, 240, 0.1);
   color: var(--tag-color);
   font-weight: 500;
+  letter-spacing: 0.02em;
 }
 
 .link {
-  font-family: "Roboto Mono", monospace;
-  font-size: 13px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
   font-weight: 500;
-  color: #0987f2;
+  color: #1D8EF0;
   text-decoration: none;
   padding-top: 8px;
+  letter-spacing: 0.02em;
 }
 
 .link:hover {
@@ -86,7 +89,7 @@
 
 @media (width >= 800px) {
   .card {
-    width: 340px;
+    width: 360px;
   }
 
   .title {

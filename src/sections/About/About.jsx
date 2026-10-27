@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import styles from "./AboutStyles.module.css";
+import SectionTitle from "../../common/SectionTitle";
 
 const ease = [0.25, 0.46, 0.45, 0.94];
 
@@ -16,15 +17,7 @@ const itemVariants = {
 function About() {
   return (
     <section id="about" className={styles.container}>
-      <motion.h1
-        className="sectionTitle"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-80px" }}
-        transition={{ duration: 0.7, ease }}
-      >
-        About
-      </motion.h1>
+      <SectionTitle>About</SectionTitle>
       <motion.div
         className={styles.content}
         variants={containerVariants}
@@ -33,20 +26,23 @@ function About() {
         viewport={{ once: true, margin: "-60px" }}
       >
         <motion.p variants={itemVariants} className={styles.lead}>
-          I&apos;m a Computer Science graduate student at the University of Windsor,
-          where I work as a Graduate Research Assistant investigating how AI systems
-          can be compromised — and how to stop it.
+          I&apos;m a software developer and Computer Science graduate student at the
+          University of Windsor, where I work as a Graduate Research Assistant building
+          software at the intersection of ML and security.
+        </motion.p>
+        <motion.blockquote variants={itemVariants} className={styles.highlight}>
+          I think the best engineers are the ones who understand how systems fail,
+          not just how they succeed.
+        </motion.blockquote>
+        <motion.p variants={itemVariants}>
+          My background spans full-stack development, machine learning, and systems
+          programming. One of my most significant projects achieved 92.5% accuracy
+          detecting backdoored LLMs - combining semantic drift analysis with
+          activation-level inspection to expose hidden behaviors that survive fine-tuning.
         </motion.p>
         <motion.p variants={itemVariants}>
-          My research sits at the intersection of machine learning security and software
-          engineering. I focus on the gap between what language models are designed to do
-          and what they can be secretly made to do — building detection systems that
-          identify backdoored models before they cause harm.
-        </motion.p>
-        <motion.p variants={itemVariants}>
-          Outside of research, I build across the stack. I care about software that is
-          both intelligent and reliable, and I think the best engineers are the ones who
-          understand how systems fail, not just how they succeed.
+          I care about software that is both intelligent and reliable, and I bring that
+          mindset whether I&apos;m building a web app, a CLI tool, or an ML pipeline.
         </motion.p>
       </motion.div>
     </section>

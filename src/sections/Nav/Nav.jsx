@@ -6,15 +6,8 @@ const sections = ["hero", "about", "projects", "skills", "experience", "contact"
 const navLinks = ["about", "projects", "skills", "experience", "contact"];
 
 function Nav() {
-  const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("hero");
   const [menuOpen, setMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 50);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -42,7 +35,7 @@ function Nav() {
   return (
     <>
       <motion.nav
-        className={`${styles.nav} ${scrolled ? styles.scrolled : ""}`}
+        className={styles.nav}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}

@@ -10,23 +10,15 @@
   padding: 18px 40px;
   background: transparent;
   border-bottom: 1px solid transparent;
-  transition: background 500ms ease, border-color 500ms ease;
-}
-
-.nav.scrolled {
-  background: var(--nav-bg);
-  border-bottom: 1px solid var(--nav-border);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
 }
 
 .logo {
-  font-family: "Rubik", sans-serif;
-  font-size: 22px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 20px;
   font-weight: 700;
   text-decoration: none;
-  letter-spacing: 1px;
-  background: linear-gradient(135deg, #0987f2, #8b5cf6);
+  letter-spacing: -0.03em;
+  background: linear-gradient(135deg, #1D8EF0, #A855F7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -44,12 +36,13 @@
 }
 
 .links a {
-  font-family: "Roboto Mono", monospace;
-  font-size: 14px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 13px;
   font-weight: 500;
+  letter-spacing: 0.04em;
   color: var(--text-color);
   text-decoration: none;
-  opacity: 0.7;
+  opacity: 0.55;
   transition: opacity 200ms ease;
 }
 
@@ -59,7 +52,7 @@
 
 .links a.active {
   opacity: 1;
-  background: linear-gradient(135deg, #0987f2, #8b5cf6);
+  background: linear-gradient(135deg, #1D8EF0, #A855F7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -124,10 +117,10 @@
 }
 
 .mobileLinks a {
-  font-family: "Rubik", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 36px;
-  font-weight: 800;
-  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: -0.04em;
   text-decoration: none;
   color: var(--text-color);
   opacity: 0.7;
@@ -140,7 +133,7 @@
 }
 
 .mobileLinks a.mobileActive {
-  background: linear-gradient(135deg, #0987f2, #8b5cf6);
+  background: linear-gradient(135deg, #1D8EF0, #A855F7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
